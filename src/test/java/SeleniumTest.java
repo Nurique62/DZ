@@ -8,9 +8,10 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.chrome.ChromeOptions;
+
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-class ChromeTest {
+class chromeTest {
 
     WebDriver driver;
 
@@ -34,7 +35,7 @@ class ChromeTest {
     }
 
     @Test
-    void IHopeItWorksTest() throws InterruptedException {
+    void shouldOrderCardTest() {
         driver.get("http://localhost:9999");
         driver.findElement(By.cssSelector("[data-test-id=name] input")).sendKeys("Иннокентий Смок-туновский");
         driver.findElement(By.cssSelector("[data-test-id=phone] input")).sendKeys("+79670395590");
